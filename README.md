@@ -211,6 +211,40 @@ A alteração do diretório pode ser realizada através do comando abaixo:
 
 	git remote add origin git@github.com:Oliveira4driano/Git.git
 	
+Tipos de tag
+Existem dois tipos de tag: annotaded e lightweight. De maneira bem resumida, podemos dizer que tags annotated armazenam detalhes sobre o estado do repositório naquele momento, enquanto tags lightweight armazenam apenas o checksum do commit em que foram geradas!
+```
+$ git tag -a <name> -m <message>
+
+git tag -a vs-1.0 -m "master versão1.0"
+```
+Agora iremos obter informações sobre nossa tag. Execute o comando:
+```
+$ git tag
+$ git show v1.0
+```
+Agora iremos “mapear” o nosso repositório no Github ao nosso repositório local o remote
+```
+git remote add origin https://github.com/Oliveira4driano/laravel8.git
+
+git remote add origin https://github.com/Oliveira4driano/OreoSQL.git
+```
+
+Push
+
+Agora executaremos o comando final do nosso processo! o comando push é o responsável por de fato enviar nossas alterações ao remote.
+No terminal, execute:
+O primeiro push de um repositório deve conter o nome do repositório remoto e o branch.
+```
+git push  https://github.com/Oliveira4driano/OreoSQL.git master -f
+
+git push -u origin master
+```
+Os demais pushes não precisam dessa informação
+```
+git push
+```
+	
 ### Exibir informações dos repositórios remotos
 
 	git remote show origin
