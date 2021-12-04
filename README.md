@@ -58,16 +58,18 @@ touch .gitignore
 
 Incluindo arquivos/diretórios no .gitignore a serem ignorados
 
-# ignora os arquivos com extensões 
+### ignora os arquivos com extensões 
 .gitignore
-# Para ignorar todos arquivos e sub-pastas localizados na pasta metadata/plugins/
+### Para ignorar todos arquivos e sub-pastas localizados na pasta metadata/plugins/
 metadata/plugins/nome-do-plugin
 
-# Para ignorar todos os arquivos e sub-pastas da pasta metadata/
+### Para ignorar todos os arquivos e sub-pastas da pasta metadata/
 metadata/
-Atente que se você já adicionou os arquivos no repositório, precisa removê-los.
 
-git rm --cached -r /.metadata
+
+###Atente que se você já adicionou os arquivos no repositório, precisa removê-los.
+
+git rm --cached -r metadata/
 
 
 
