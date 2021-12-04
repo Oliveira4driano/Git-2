@@ -52,6 +52,25 @@ Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo *
 
 * Por repositório: Deve ser armazenado no diretório do repositório e deve conter a lista dos arquivos/diretórios que devem ser ignorados apenas para o repositório específico.
 
+criando arquivo gitignore
+
+touch .gitignore
+
+Incluindo arquivos/diretórios no .gitignore a serem ignorados
+
+# ignora os arquivos com extensões 
+.gitignore
+# Para ignorar todos arquivos e sub-pastas localizados na pasta metadata/plugins/
+metadata/plugins/nome-do-plugin
+
+# Para ignorar todos os arquivos e sub-pastas da pasta metadata/
+metadata/
+Atente que se você já adicionou os arquivos no repositório, precisa removê-los.
+
+git rm --cached -r /.metadata
+
+
+
 ![git](https://user-images.githubusercontent.com/33138839/94014083-0b428380-fd79-11ea-9c56-165aec46f9e4.png)
 
 ## Repositório Local
