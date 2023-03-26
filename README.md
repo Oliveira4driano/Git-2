@@ -257,9 +257,9 @@ Agora executaremos o comando final do nosso processo! o comando push é o respon
 No terminal, execute:
 O primeiro push de um repositório deve conter o nome do repositório remoto e o branch.
 ```
-git push  https://github.com/Oliveira4driano/OreoSQL.git master -f
+git push  https://github.com/Oliveira4driano/OreoSQL.git main -f
 
-git push -u origin master
+git push -u origin main
 ```
 Os demais pushes não precisam dessa informação
 ```
@@ -282,7 +282,7 @@ git push
 
 O primeiro **push** de um repositório deve conter o nome do repositório remoto e o branch.
 
-	git push -u origin master
+	git push -u origin main
 	
 Os demais **pushes** não precisam dessa informação
 
@@ -334,7 +334,7 @@ Para criar uma tag assinada é necessário uma chave privada (GNU Privacy Guard 
 
 O **master** é o branch principal do GIT.
 
-O **HEAD** é um ponteiro *especial* que indica qual é o branch atual. Por padrão, o **HEAD** aponta para o branch principal, o **master**.
+O **HEAD** é um ponteiro *especial* que indica qual é o branch atual. Por padrão, o **HEAD** aponta para o branch principal, o **main**.
 
 ##### Criando um novo branch
 
@@ -381,11 +381,11 @@ A mensagem indicando um *merge* manual será:
 
 	git branch -v
 
-###### Listar branches que já foram fundidos (merged) com o **master**
+###### Listar branches que já foram fundidos (merged) com o **main**
 
 	git branch --merged
 
-###### Listar branches que não foram fundidos (merged) com o **master**
+###### Listar branches que não foram fundidos (merged) com o **main**
 
 	git branch --no-merged
 
@@ -410,11 +410,11 @@ A mensagem indicando um *merge* manual será:
 
 ### Rebasing
 
-Fazendo o **rebase** entre um o branch bug-123 e o master.
+Fazendo o **rebase** entre um o branch bug-123 e o main.
 
 	git checkout experiment
 	
-	git rebase master
+	git rebase main
 	
 
 Mais informações e explicações sobre o [Rebasing](http://git-scm.com/book/en/Git-Branching-Rebasing)
